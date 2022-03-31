@@ -78,6 +78,10 @@ h1:hover span {
     font-size: 1.2em;
 }
 
+.login-link:hover {
+    text-shadow: 0 0 5px rgb(51, 27, 27), 0 0 20px #fff, 0 0 40px #fff;
+}
+
 .nav-items {
     padding: 20px;
     padding-right: 30px;
