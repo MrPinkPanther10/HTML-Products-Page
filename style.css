@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-    color: #484848;
+    color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: bold;
     font-family: monospace;
@@ -73,6 +73,11 @@ h1:hover span {
     float: right;
 }
 
+.login-link {
+    color: white;
+    font-size: 1.2em;
+}
+
 .nav-items {
     padding: 20px;
     padding-right: 30px;
@@ -81,7 +86,7 @@ h1:hover span {
 .nav-items a {
     font-size: 1.4em;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .search-button {
@@ -99,6 +104,12 @@ h1:hover span {
     margin-top: 10px;
     display: flex;
     list-style: none;
+}
+
+.nav-items:hover {
+    text-shadow: 0 0 5px rgb(51, 27, 27), 0 0 20px #fff, 0 0 40px #fff;
+    text-decoration: underline;
+    transition: 1s;
 }
 
 /* END OF HEADER SECTION */
@@ -130,17 +141,6 @@ h1:hover span {
 
 .container .card:hover:before {
     clip-path: circle(300px at 80% -20%);
-}
-
-.card-text {
-    position: absolute;
-    top: 30%;
-    font-size: 12em;
-    font-weight: 800;
-    opacity: 0.25;
-    font-style: italic;
-    text-align: center;
-    color: #000000;
 }
 
 .container .card .imgBx {
@@ -179,7 +179,7 @@ h1:hover span {
 }
 
 .container .card:hover .contentBx {
-    height: 90px;
+    height: 150px;
 }
 
 .container .card .contentBx h2 {
