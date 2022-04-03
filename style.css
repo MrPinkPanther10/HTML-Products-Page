@@ -116,6 +116,7 @@ h1:hover span {
     transition: 1s;
 }
 
+
 /* END OF HEADER SECTION */
 
 .main-showcase {
@@ -292,4 +293,73 @@ h1:hover span {
     margin-top: 10%;
     transform: translateY(0px);
     transition-delay: 0.75s;
+}
+
+
+/* Footer Section */
+
+.footbar {
+    bottom: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #8dd6d3;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#myBtn {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+
+/* Responsive */
+
+@media (max-width: 940px) {
+    .header {
+        width: auto;
+    }
+    .navbar {
+        width: auto;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+    .nav-links {
+        display: none;
+    }
+    .right-container {
+        display: none;
+    }
+    .container {
+        transform: skew(0deg);
+    }
+    .card {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 535px) {
+    .left-column img {
+        width: 220px;
+        top: -85px;
+    }
 }
